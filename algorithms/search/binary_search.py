@@ -19,6 +19,6 @@ element = 4
 result = binary_search(arr, element, 0, len(arr)-1)               # O(lgN)
  
 if result != -1:
-    print("Element was found at index ", str(result))
+    print("Element was found at index: ", str(result))
 else:
     print("Element was not found")
