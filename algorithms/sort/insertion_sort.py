@@ -10,8 +10,6 @@ def insertion_sort(arr):
                 j -= 1
         arr[j + 1] = key 
   
-  
-
 arr = [7, 18, 33, 2, 5, 1, 81] 
 
 insertion_sort(arr)                  # Worst case:     O(n^2)
