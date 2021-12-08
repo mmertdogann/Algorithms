@@ -1,3 +1,3 @@
 # Algorithms
 
-Implementation of various Data Structures & Algorithms in Python
+Implementation of various Data Structures & Algorithms on leetcode using Python
