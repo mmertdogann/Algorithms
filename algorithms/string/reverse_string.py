@@ -1,18 +1,13 @@
-def reverse(str):
-  lst =[]
-
-  for i in reversed(range(len(str))):
-    lst.append(str[i])
-
-  return ''.join(lst)
-
-# Special for Python array slicing
-def slicing_reverse(str):
-    return str[: : -1]
+'''
+    Leetcode - Reverse String: https://leetcode.com/explore/interview/card/top-interview-questions-easy/127/strings/879/
+'''
 
 
-str = reverse('I am a programmer')              # O(n)
-str2 = slicing_reverse('I am a programmer')     # O(n)
+class Solution:
+    def reverseString(self, s: List[str]) -> None:
+        size = len(s)
+        half = size // 2
 
-print(str) 
-print(str2)
+        for i in range(half):
+            j = size - 1 - i
+            s[i], s[j] = s[j], s[i]
