@@ -9,6 +9,6 @@ class Solution:
         for num in nums:
             counts[num] = counts.get(num, 0) + 1
         for key, value in counts.items():
-            if value != 2:
+            if value == 1:
                 return key
         return 0
