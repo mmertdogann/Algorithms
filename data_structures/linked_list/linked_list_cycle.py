@@ -1,5 +1,5 @@
 '''
-    Leetcode - Counting Bits: https://leetcode.com/problems/linked-list-cycle/
+    Leetcode - Linked List Cycle: https://leetcode.com/problems/linked-list-cycle/
 '''
 
 # Definition for singly-linked list.
