@@ -1,3 +1,27 @@
+'''
+    Leetcode - Binary Search: https://leetcode.com/problems/binary-search/
+'''
+
+
+# Leetcode Problem
+class Solution:
+    def search(self, nums: List[int], target: int) -> int:
+        low = 0
+        high = len(nums) - 1
+
+        while low <= high:
+            mid = (low + high) // 2
+            if nums[mid] < target:
+                low = mid + 1
+            elif nums[mid] > target:
+                high = mid - 1
+            else:
+                return mid
+
+        return -1
+
+
+# Recursive
 def binary_search(array, element, start, end):
     if start > end:
         return -1
@@ -11,14 +35,3 @@ def binary_search(array, element, start, end):
         return binary_search(array, element, start, mid - 1)
     else:
         return binary_search(array, element, mid + 1, end)
-
-
-arr = [2, 3, 4, 7, 10, 32, 40, 97]
-element = 4
-
-result = binary_search(arr, element, 0, len(arr)-1)               # O(lgN)
- 
-if result != -1:
-    print("Element was found at index: ", str(result))
-else:
-    print("Element was not found")
