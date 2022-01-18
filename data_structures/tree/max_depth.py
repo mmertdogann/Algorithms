@@ -16,7 +16,7 @@ class Solution:
             return 0
         else:
             # if one of the subtree is None, you should return the depth of another subtree.
-            # if all of the subtree is not None, you should return the minimum depth of the two subtrees
+            # if all of the subtree is not None, you should return the maximum depth of the two subtrees
             if root.left is None:
                 return self.maxDepth(root.right) + 1
             elif root.right is None:
